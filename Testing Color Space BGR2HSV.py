@@ -121,7 +121,7 @@ while True:
         window_bgr_hsv[:] = [hsv_bgr[0,0,0],hsv_bgr[0,0,1],hsv_bgr[0,0,2]]
         cv2.putText(window_bgr_hsv,str(hsv_bgr),(0,50), font, 1,(0,0,0),2,cv2.LINE_AA)
     
-    # Exite all windows when 'Esc' button is pressed
+    # Exit all windows when 'Esc' button is pressed
     k= cv2.waitKey(5) & 0xFF
     if k == 27:
         break
